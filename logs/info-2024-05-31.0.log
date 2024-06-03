@@ -1,0 +1,983 @@
+2024-05-31 09:11:44.716 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 09:11:44.754 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 20692 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 09:11:44.755 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 09:11:49.839 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 09:11:49.841 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 09:11:49.945 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 92 ms. Found 0 Redis repository interfaces.
+2024-05-31 09:11:50.985 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 09:11:50.996 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 09:11:50.997 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 09:11:50.997 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 09:11:51.089 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 09:11:51.089 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6307 ms
+2024-05-31 09:11:51.357 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 09:11:51.637 [redisson-netty-2-6] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 09:11:51.683 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 09:11:52.007 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 09:11:52.433 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@623c9988
+2024-05-31 09:11:52.434 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 09:11:52.435 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 09:11:52.435 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 09:12:01.732 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 09:12:01.818 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@67afba96, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7505ef47, org.springframework.security.web.context.SecurityContextHolderFilter@67171221, org.springframework.security.web.header.HeaderWriterFilter@3e37c38f, org.springframework.web.filter.CorsFilter@4bd39edc, org.springframework.security.web.authentication.logout.LogoutFilter@25ee6683, net.maku.framework.security.filter.AuthenticationTokenFilter@75aeec0a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c7159d5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1398e3aa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a6f3ac7, org.springframework.security.web.session.SessionManagementFilter@746cb25d, org.springframework.security.web.access.ExceptionTranslationFilter@10fef6da, org.springframework.security.web.access.intercept.AuthorizationFilter@7669d7a2]
+2024-05-31 09:12:02.008 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 09:12:02.716 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 09:12:02.723 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 09:12:02.734 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 18.304 seconds (process running for 23.362)
+2024-05-31 09:12:23.002 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 09:12:23.002 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 09:12:23.004 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-05-31 09:15:42.456 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 09:15:42.460 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 09:15:42.461 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 09:15:42.461 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 09:20:16.614 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 09:20:16.641 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 4004 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 09:20:16.642 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 09:20:17.790 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 09:20:17.791 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 09:20:17.875 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 0 Redis repository interfaces.
+2024-05-31 09:20:18.695 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 09:20:18.702 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 09:20:18.703 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 09:20:18.703 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 09:20:18.763 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 09:20:18.764 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2098 ms
+2024-05-31 09:20:18.941 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 09:20:19.120 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 09:20:19.156 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 09:20:19.365 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 09:20:19.712 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@4f5d7091
+2024-05-31 09:20:19.714 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 09:20:19.714 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 09:20:19.714 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 09:20:27.073 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 09:20:27.143 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@68fe866b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@729feae8, org.springframework.security.web.context.SecurityContextHolderFilter@43a8dd9b, org.springframework.security.web.header.HeaderWriterFilter@56f3f9da, org.springframework.web.filter.CorsFilter@c2191a8, org.springframework.security.web.authentication.logout.LogoutFilter@5aeaee3, net.maku.framework.security.filter.AuthenticationTokenFilter@2ebd6a0d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1398e3aa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a4d72bd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@283a5c2b, org.springframework.security.web.session.SessionManagementFilter@31906cb2, org.springframework.security.web.access.ExceptionTranslationFilter@1313dea8, org.springframework.security.web.access.intercept.AuthorizationFilter@5fc3b20b]
+2024-05-31 09:20:27.324 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 09:20:27.979 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 09:20:27.986 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 09:20:27.997 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 11.631 seconds (process running for 12.209)
+2024-05-31 09:20:28.579 [RMI TCP Connection(4)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 09:20:28.579 [RMI TCP Connection(4)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 09:20:28.581 [RMI TCP Connection(4)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-05-31 09:21:03.919 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 09:21:03.919 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 09:21:03.925 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 09:21:03.925 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 09:21:14.959 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 09:21:14.986 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 2876 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 09:21:14.986 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 09:21:16.131 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 09:21:16.133 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 09:21:16.215 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74 ms. Found 0 Redis repository interfaces.
+2024-05-31 09:21:17.025 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 09:21:17.032 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 09:21:17.033 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 09:21:17.033 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 09:21:17.091 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 09:21:17.091 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2081 ms
+2024-05-31 09:21:17.259 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 09:21:17.435 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 09:21:17.470 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 09:21:17.677 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 09:21:17.986 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@66ab3716
+2024-05-31 09:21:17.987 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 09:21:17.987 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 09:21:17.987 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 09:21:25.368 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 09:21:25.439 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@66227940, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ba76911, org.springframework.security.web.context.SecurityContextHolderFilter@26169be3, org.springframework.security.web.header.HeaderWriterFilter@279b83ea, org.springframework.web.filter.CorsFilter@5e1bfe66, org.springframework.security.web.authentication.logout.LogoutFilter@4b9187de, net.maku.framework.security.filter.AuthenticationTokenFilter@488c6c98, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@522fdf0c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74a37c91, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ffb8f15, org.springframework.security.web.session.SessionManagementFilter@4664fef, org.springframework.security.web.access.ExceptionTranslationFilter@2459715c, org.springframework.security.web.access.intercept.AuthorizationFilter@79a15001]
+2024-05-31 09:21:25.612 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 09:21:26.276 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 09:21:26.283 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 09:21:26.294 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 11.586 seconds (process running for 12.148)
+2024-05-31 09:21:26.861 [RMI TCP Connection(2)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 09:21:26.861 [RMI TCP Connection(2)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 09:21:26.864 [RMI TCP Connection(2)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-05-31 09:38:29.851 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 09:38:29.851 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 09:38:29.852 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 09:38:29.852 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 09:38:33.927 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 09:38:33.954 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 8268 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 09:38:33.955 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 09:38:35.097 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 09:38:35.099 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 09:38:35.183 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 0 Redis repository interfaces.
+2024-05-31 09:38:36.036 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 09:38:36.043 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 09:38:36.044 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 09:38:36.044 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 09:38:36.102 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 09:38:36.102 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2123 ms
+2024-05-31 09:38:36.273 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 09:38:36.453 [redisson-netty-2-6] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 09:38:36.488 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 09:38:36.700 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 09:38:37.041 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@4f5d7091
+2024-05-31 09:38:37.042 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 09:38:37.043 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 09:38:37.043 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 09:38:44.426 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 09:38:44.499 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1107cbd8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@610640e3, org.springframework.security.web.context.SecurityContextHolderFilter@3a089620, org.springframework.security.web.header.HeaderWriterFilter@474a63d9, org.springframework.web.filter.CorsFilter@c2191a8, org.springframework.security.web.authentication.logout.LogoutFilter@31c87223, net.maku.framework.security.filter.AuthenticationTokenFilter@2ebd6a0d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63604641, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@526fbb80, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@95f61c2, org.springframework.security.web.session.SessionManagementFilter@58581ab6, org.springframework.security.web.access.ExceptionTranslationFilter@76480730, org.springframework.security.web.access.intercept.AuthorizationFilter@4d2dc60]
+2024-05-31 09:38:44.685 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 09:38:45.344 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 09:38:45.350 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 09:38:45.361 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 11.681 seconds (process running for 12.222)
+2024-05-31 09:38:45.852 [RMI TCP Connection(3)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 09:38:45.852 [RMI TCP Connection(3)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 09:38:45.854 [RMI TCP Connection(3)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-05-31 09:47:45.119 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 09:47:45.120 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 09:47:45.121 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 09:47:45.121 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 09:49:11.341 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 09:49:11.369 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 1152 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 09:49:11.370 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 09:49:12.543 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 09:49:12.545 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 09:49:12.630 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 0 Redis repository interfaces.
+2024-05-31 09:49:13.467 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 09:49:13.474 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 09:49:13.475 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 09:49:13.475 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 09:49:13.536 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 09:49:13.536 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2142 ms
+2024-05-31 09:49:13.718 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 09:49:13.894 [redisson-netty-2-6] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 09:49:13.929 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 09:49:14.144 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 09:49:14.469 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@580a5b6e
+2024-05-31 09:49:14.471 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 09:49:14.471 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 09:49:14.471 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 09:49:21.754 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 09:49:21.827 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7ceb432c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f143176, org.springframework.security.web.context.SecurityContextHolderFilter@2c95cb24, org.springframework.security.web.header.HeaderWriterFilter@511f21f9, org.springframework.web.filter.CorsFilter@15ae31b, org.springframework.security.web.authentication.logout.LogoutFilter@5ffaac1f, net.maku.framework.security.filter.AuthenticationTokenFilter@37823482, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52268f73, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@65dac812, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12568b11, org.springframework.security.web.session.SessionManagementFilter@54980154, org.springframework.security.web.access.ExceptionTranslationFilter@5e83badc, org.springframework.security.web.access.intercept.AuthorizationFilter@64a9719a]
+2024-05-31 09:49:22.022 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 09:49:22.702 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 09:49:22.709 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 09:49:22.721 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 11.675 seconds (process running for 12.342)
+2024-05-31 09:49:23.294 [RMI TCP Connection(3)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 09:49:23.295 [RMI TCP Connection(3)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 09:49:23.296 [RMI TCP Connection(3)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-31 10:23:15.278 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 10:23:15.279 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 10:23:15.284 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 10:23:15.284 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 10:23:19.984 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 10:23:20.011 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 10360 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 10:23:20.012 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 10:23:21.250 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 10:23:21.252 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 10:23:21.344 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 82 ms. Found 0 Redis repository interfaces.
+2024-05-31 10:23:22.207 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 10:23:22.215 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 10:23:22.216 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 10:23:22.216 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 10:23:22.285 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 10:23:22.285 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2248 ms
+2024-05-31 10:23:22.468 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 10:23:22.657 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 10:23:22.695 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 10:23:22.926 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 10:23:23.262 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@4b477121
+2024-05-31 10:23:23.263 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 10:23:23.264 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 10:23:23.264 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 10:23:31.015 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 10:23:31.088 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6f0969db, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38eb2140, org.springframework.security.web.context.SecurityContextHolderFilter@531455c1, org.springframework.security.web.header.HeaderWriterFilter@2a4137a2, org.springframework.web.filter.CorsFilter@32da6cef, org.springframework.security.web.authentication.logout.LogoutFilter@30b5225b, net.maku.framework.security.filter.AuthenticationTokenFilter@78839c2e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1dd17c0c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4cb42a5a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f06006d, org.springframework.security.web.session.SessionManagementFilter@1263664f, org.springframework.security.web.access.ExceptionTranslationFilter@5d12fa92, org.springframework.security.web.access.intercept.AuthorizationFilter@2a3ced3d]
+2024-05-31 10:23:31.282 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 10:23:31.969 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 10:23:31.977 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 10:23:31.988 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 12.279 seconds (process running for 13.145)
+2024-05-31 10:23:32.311 [RMI TCP Connection(4)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 10:23:32.311 [RMI TCP Connection(4)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 10:23:32.314 [RMI TCP Connection(4)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-05-31 10:27:40.273 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 10:27:40.273 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 10:27:40.274 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 10:27:40.274 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 10:27:44.172 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 10:27:44.199 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 8840 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 10:27:44.199 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 10:27:45.419 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 10:27:45.421 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 10:27:45.509 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 0 Redis repository interfaces.
+2024-05-31 10:27:46.406 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 10:27:46.414 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 10:27:46.415 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 10:27:46.415 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 10:27:46.481 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 10:27:46.482 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2257 ms
+2024-05-31 10:27:46.670 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 10:27:46.864 [redisson-netty-2-6] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 10:27:46.902 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 10:27:47.122 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 10:27:47.464 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@2bef33e7
+2024-05-31 10:27:47.465 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 10:27:47.465 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 10:27:47.466 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 10:27:55.196 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 10:27:55.273 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@71120f9a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@40597c95, org.springframework.security.web.context.SecurityContextHolderFilter@5d12fa92, org.springframework.security.web.header.HeaderWriterFilter@68fce3e5, org.springframework.web.filter.CorsFilter@5d00e30e, org.springframework.security.web.authentication.logout.LogoutFilter@4095ebff, net.maku.framework.security.filter.AuthenticationTokenFilter@1c96bf1e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a26eecb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a4137a2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7daecd21, org.springframework.security.web.session.SessionManagementFilter@4df50829, org.springframework.security.web.access.ExceptionTranslationFilter@43e6bcfd, org.springframework.security.web.access.intercept.AuthorizationFilter@23c95292]
+2024-05-31 10:27:55.472 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 10:27:56.179 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 10:27:56.187 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 10:27:56.198 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 12.294 seconds (process running for 12.946)
+2024-05-31 10:27:56.497 [RMI TCP Connection(3)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 10:27:56.497 [RMI TCP Connection(3)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 10:27:56.499 [RMI TCP Connection(3)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-05-31 10:29:00.957 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 10:29:00.957 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 10:29:00.959 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 10:29:00.959 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 10:29:04.046 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 10:29:04.073 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 3620 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 10:29:04.074 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 10:29:07.315 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 10:29:07.341 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 24492 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 10:29:07.342 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 10:29:08.520 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 10:29:08.522 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 10:29:08.612 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 81 ms. Found 0 Redis repository interfaces.
+2024-05-31 10:29:09.454 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 10:29:09.461 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 10:29:09.462 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 10:29:09.462 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 10:29:09.531 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 10:29:09.531 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2164 ms
+2024-05-31 10:29:09.705 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 10:29:09.892 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 10:29:09.929 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 10:29:10.150 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 10:29:10.524 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@2bef33e7
+2024-05-31 10:29:10.526 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 10:29:10.526 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 10:29:10.526 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 10:29:17.858 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 10:29:17.933 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4872d04d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75564689, org.springframework.security.web.context.SecurityContextHolderFilter@2e78213c, org.springframework.security.web.header.HeaderWriterFilter@2fa81b23, org.springframework.web.filter.CorsFilter@5d00e30e, org.springframework.security.web.authentication.logout.LogoutFilter@424769f2, net.maku.framework.security.filter.AuthenticationTokenFilter@1c96bf1e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4fc41cba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7798de95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65977161, org.springframework.security.web.session.SessionManagementFilter@3411e0d7, org.springframework.security.web.access.ExceptionTranslationFilter@5862a07b, org.springframework.security.web.access.intercept.AuthorizationFilter@223ed38f]
+2024-05-31 10:29:18.137 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 10:29:18.853 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 10:29:18.861 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 10:29:18.872 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 11.823 seconds (process running for 12.472)
+2024-05-31 10:29:19.145 [RMI TCP Connection(4)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 10:29:19.145 [RMI TCP Connection(4)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 10:29:19.147 [RMI TCP Connection(4)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-31 10:30:46.457 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 10:30:46.457 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 10:30:46.458 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 10:30:46.459 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 10:30:53.722 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 10:30:53.750 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 3048 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 10:30:53.750 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 10:30:54.947 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 10:30:54.949 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 10:30:55.036 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 0 Redis repository interfaces.
+2024-05-31 10:30:55.890 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 10:30:55.897 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 10:30:55.899 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 10:30:55.899 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 10:30:55.963 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 10:30:55.964 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2189 ms
+2024-05-31 10:30:56.140 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 10:30:56.332 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 10:30:56.369 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 10:30:56.588 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 10:30:56.978 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@2bef33e7
+2024-05-31 10:30:56.979 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 10:30:56.980 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 10:30:56.980 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 10:31:04.738 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 10:31:04.812 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@64514009, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@40b2aae9, org.springframework.security.web.context.SecurityContextHolderFilter@6c1a9613, org.springframework.security.web.header.HeaderWriterFilter@18e7b33e, org.springframework.web.filter.CorsFilter@5d00e30e, org.springframework.security.web.authentication.logout.LogoutFilter@35b97c69, net.maku.framework.security.filter.AuthenticationTokenFilter@1c96bf1e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cb42a5a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d1ef2fc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2132629e, org.springframework.security.web.session.SessionManagementFilter@2c1eba2e, org.springframework.security.web.access.ExceptionTranslationFilter@50aa5826, org.springframework.security.web.access.intercept.AuthorizationFilter@22112da1]
+2024-05-31 10:31:05.004 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 10:31:05.745 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 10:31:05.753 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 10:31:05.765 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 12.311 seconds (process running for 12.948)
+2024-05-31 10:31:06.061 [RMI TCP Connection(1)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 10:31:06.062 [RMI TCP Connection(1)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 10:31:06.064 [RMI TCP Connection(1)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-05-31 10:32:15.659 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 10:32:15.660 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 10:32:15.661 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 10:32:15.661 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 10:32:44.872 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 10:32:44.898 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 10488 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 10:32:44.899 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 10:32:46.098 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 10:32:46.100 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 10:32:46.188 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 0 Redis repository interfaces.
+2024-05-31 10:32:47.050 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 10:32:47.058 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 10:32:47.059 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 10:32:47.059 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 10:32:47.120 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 10:32:47.120 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2196 ms
+2024-05-31 10:32:47.295 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 10:32:47.488 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 10:32:47.525 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 10:32:47.741 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 10:32:48.075 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@2bef33e7
+2024-05-31 10:32:48.077 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 10:32:48.077 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 10:32:48.077 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 10:32:55.773 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 10:32:55.847 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1c04dae9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4872d04d, org.springframework.security.web.context.SecurityContextHolderFilter@2c66be14, org.springframework.security.web.header.HeaderWriterFilter@380f9c1d, org.springframework.web.filter.CorsFilter@5d00e30e, org.springframework.security.web.authentication.logout.LogoutFilter@6859f102, net.maku.framework.security.filter.AuthenticationTokenFilter@1c96bf1e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20dab85c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f59ecf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75564689, org.springframework.security.web.session.SessionManagementFilter@290964bd, org.springframework.security.web.access.ExceptionTranslationFilter@6803b02d, org.springframework.security.web.access.intercept.AuthorizationFilter@2df019b8]
+2024-05-31 10:32:56.046 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 10:32:56.769 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 10:32:56.778 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 10:32:56.790 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 12.185 seconds (process running for 12.827)
+2024-05-31 10:32:56.942 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 10:32:56.943 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 10:32:56.944 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-31 10:35:16.560 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 10:35:16.560 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 10:35:16.562 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 10:35:16.562 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 10:36:36.686 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 10:36:36.714 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 22676 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 10:36:36.714 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 10:36:37.915 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 10:36:37.917 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 10:36:38.004 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 0 Redis repository interfaces.
+2024-05-31 10:36:38.867 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 10:36:38.874 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 10:36:38.875 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 10:36:38.875 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 10:36:38.937 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 10:36:38.937 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2196 ms
+2024-05-31 10:36:39.111 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 10:36:39.303 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 10:36:39.341 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 10:36:39.557 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 10:36:39.882 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@2bef33e7
+2024-05-31 10:36:39.883 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 10:36:39.884 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 10:36:39.884 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 10:36:47.621 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 10:36:47.694 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2461b519, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5216e43c, org.springframework.security.web.context.SecurityContextHolderFilter@38f12596, org.springframework.security.web.header.HeaderWriterFilter@747fb4b1, org.springframework.web.filter.CorsFilter@5d00e30e, org.springframework.security.web.authentication.logout.LogoutFilter@3327406e, net.maku.framework.security.filter.AuthenticationTokenFilter@1c96bf1e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@fcd300e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b760eb7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e620893, org.springframework.security.web.session.SessionManagementFilter@3f3b0b19, org.springframework.security.web.access.ExceptionTranslationFilter@32fccfc2, org.springframework.security.web.access.intercept.AuthorizationFilter@57ae3c0e]
+2024-05-31 10:36:47.887 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 10:36:48.567 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 10:36:48.574 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 10:36:48.585 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 12.172 seconds (process running for 12.833)
+2024-05-31 10:36:49.006 [RMI TCP Connection(2)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 10:36:49.006 [RMI TCP Connection(2)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 10:36:49.007 [RMI TCP Connection(2)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-31 10:38:51.952 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 10:38:51.952 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 10:38:51.953 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 10:38:51.953 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 10:38:55.226 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 10:38:55.252 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 11324 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 10:38:55.252 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 10:38:56.439 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 10:38:56.441 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 10:38:56.525 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 0 Redis repository interfaces.
+2024-05-31 10:38:57.381 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 10:38:57.388 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 10:38:57.389 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 10:38:57.389 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 10:38:57.449 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 10:38:57.450 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2172 ms
+2024-05-31 10:38:57.630 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 10:38:57.818 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 10:38:57.856 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 10:38:58.086 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 10:38:58.420 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@40dcbf7
+2024-05-31 10:38:58.421 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 10:38:58.421 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 10:38:58.421 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 10:39:05.856 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 10:39:05.936 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@193b6f5b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2fd16368, org.springframework.security.web.context.SecurityContextHolderFilter@237e61ac, org.springframework.security.web.header.HeaderWriterFilter@461f295c, org.springframework.web.filter.CorsFilter@580c4c0b, org.springframework.security.web.authentication.logout.LogoutFilter@3f35d13d, net.maku.framework.security.filter.AuthenticationTokenFilter@69e8f7a5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@765650e4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@223ed38f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3fd7f545, org.springframework.security.web.session.SessionManagementFilter@3095e9c6, org.springframework.security.web.access.ExceptionTranslationFilter@6a17ab87, org.springframework.security.web.access.intercept.AuthorizationFilter@2910c3ae]
+2024-05-31 10:39:06.124 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 10:39:06.835 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 10:39:06.847 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 10:39:06.858 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 11.903 seconds (process running for 12.548)
+2024-05-31 10:39:07.035 [RMI TCP Connection(3)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 10:39:07.035 [RMI TCP Connection(3)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 10:39:07.036 [RMI TCP Connection(3)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-31 10:44:23.028 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 10:44:23.029 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 10:44:23.030 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 10:44:23.030 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 10:45:33.472 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 10:45:33.500 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 4364 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 10:45:33.501 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 10:45:34.785 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 10:45:34.787 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 10:45:34.869 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 0 Redis repository interfaces.
+2024-05-31 10:45:35.731 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 10:45:35.738 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 10:45:35.739 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 10:45:35.740 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 10:45:35.802 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 10:45:35.803 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2274 ms
+2024-05-31 10:45:35.988 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 10:45:36.179 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 10:45:36.217 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 10:45:36.445 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 10:45:36.816 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@3ba8fbc8
+2024-05-31 10:45:36.818 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 10:45:36.818 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 10:45:36.818 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 10:45:45.267 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 10:45:45.350 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@17f216cc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ab4215d, org.springframework.security.web.context.SecurityContextHolderFilter@318ff889, org.springframework.security.web.header.HeaderWriterFilter@7d6f31ef, org.springframework.web.filter.CorsFilter@34766f4b, org.springframework.security.web.authentication.logout.LogoutFilter@42ea4bac, net.maku.framework.security.filter.AuthenticationTokenFilter@2b6a4da7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f234e35, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3152a0a3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57dee2b9, org.springframework.security.web.session.SessionManagementFilter@60f6c148, org.springframework.security.web.access.ExceptionTranslationFilter@58fcb07b, org.springframework.security.web.access.intercept.AuthorizationFilter@4115b8a7]
+2024-05-31 10:45:45.551 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 10:45:46.284 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 10:45:46.292 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 10:45:46.304 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 13.108 seconds (process running for 14.035)
+2024-05-31 10:45:46.385 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 10:45:46.385 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 10:45:46.387 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-31 11:31:51.497 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 11:31:51.497 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 11:31:51.498 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 11:31:51.499 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 11:40:26.930 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 11:40:26.958 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 25788 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 11:40:26.959 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 11:40:28.218 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 11:40:28.221 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 11:40:28.322 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 90 ms. Found 0 Redis repository interfaces.
+2024-05-31 11:40:29.191 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 11:40:29.199 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 11:40:29.200 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 11:40:29.200 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 11:40:29.269 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 11:40:29.269 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2283 ms
+2024-05-31 11:40:29.452 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 11:40:29.647 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 11:40:29.683 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 11:40:29.909 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 11:40:30.191 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@4b477121
+2024-05-31 11:40:30.192 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 11:40:30.193 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 11:40:30.193 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 11:40:37.647 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 11:40:37.731 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@237e61ac, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19abe8f7, org.springframework.security.web.context.SecurityContextHolderFilter@42908ad5, org.springframework.security.web.header.HeaderWriterFilter@1cb58c8a, org.springframework.web.filter.CorsFilter@32da6cef, org.springframework.security.web.authentication.logout.LogoutFilter@7ae736a8, net.maku.framework.security.filter.AuthenticationTokenFilter@78839c2e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35355074, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a2d0632, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f36c42, org.springframework.security.web.session.SessionManagementFilter@6e56f5d4, org.springframework.security.web.access.ExceptionTranslationFilter@2132629e, org.springframework.security.web.access.intercept.AuthorizationFilter@8802edd]
+2024-05-31 11:40:37.923 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 11:40:38.684 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 11:40:38.695 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 11:40:38.707 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 12.055 seconds (process running for 12.818)
+2024-05-31 11:40:39.163 [RMI TCP Connection(4)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 11:40:39.163 [RMI TCP Connection(4)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 11:40:39.165 [RMI TCP Connection(4)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-05-31 11:59:07.420 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 11:59:07.420 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 11:59:07.421 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 11:59:07.421 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 14:14:40.358 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 14:14:40.388 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 4688 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 14:14:40.389 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 14:14:44.814 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 14:14:44.817 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 14:14:44.903 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 0 Redis repository interfaces.
+2024-05-31 14:14:45.767 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 14:14:45.774 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 14:14:45.775 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 14:14:45.775 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 14:14:45.837 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 14:14:45.837 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5423 ms
+2024-05-31 14:14:46.020 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 14:14:46.212 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 14:14:46.252 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 14:14:46.475 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 14:14:46.788 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@51806858
+2024-05-31 14:14:46.790 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 14:14:46.790 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 14:14:46.790 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 14:14:54.345 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 14:14:54.431 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@15363eba, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d6e8dfc, org.springframework.security.web.context.SecurityContextHolderFilter@5f7e2ca8, org.springframework.security.web.header.HeaderWriterFilter@4623c0d3, org.springframework.web.filter.CorsFilter@69a031a4, org.springframework.security.web.authentication.logout.LogoutFilter@1cfa5e46, net.maku.framework.security.filter.AuthenticationTokenFilter@11b74ecb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36821a1b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@794c22cd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2258ca14, org.springframework.security.web.session.SessionManagementFilter@319428ba, org.springframework.security.web.access.ExceptionTranslationFilter@6859f102, org.springframework.security.web.access.intercept.AuthorizationFilter@1181a376]
+2024-05-31 14:14:54.621 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 14:14:55.324 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 14:14:55.331 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 14:14:55.343 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 15.264 seconds (process running for 17.375)
+2024-05-31 14:15:01.406 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 14:15:01.407 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 14:15:01.408 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-31 14:19:54.296 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 14:19:54.296 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 14:19:54.297 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 14:19:54.297 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 14:20:12.133 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 14:20:12.159 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 544 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 14:20:12.159 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 14:20:13.395 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 14:20:13.397 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 14:20:13.487 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 0 Redis repository interfaces.
+2024-05-31 14:20:14.334 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 14:20:14.341 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 14:20:14.342 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 14:20:14.342 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 14:20:14.402 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 14:20:14.402 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2217 ms
+2024-05-31 14:20:14.577 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 14:20:14.772 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 14:20:14.809 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 14:20:15.034 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 14:20:15.374 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@380cd266
+2024-05-31 14:20:15.376 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 14:20:15.376 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 14:20:15.376 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 14:20:22.909 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 14:20:22.989 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4afb2c90, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@358b70c4, org.springframework.security.web.context.SecurityContextHolderFilter@6f0969db, org.springframework.security.web.header.HeaderWriterFilter@35b97c69, org.springframework.web.filter.CorsFilter@69a031a4, org.springframework.security.web.authentication.logout.LogoutFilter@3411e0d7, net.maku.framework.security.filter.AuthenticationTokenFilter@11b74ecb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40b2aae9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@30f74965, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d471ddb, org.springframework.security.web.session.SessionManagementFilter@2564410b, org.springframework.security.web.access.ExceptionTranslationFilter@71120f9a, org.springframework.security.web.access.intercept.AuthorizationFilter@134b9d9c]
+2024-05-31 14:20:23.186 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 14:20:23.879 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 14:20:23.886 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 14:20:23.898 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 12.03 seconds (process running for 12.691)
+2024-05-31 14:20:24.062 [RMI TCP Connection(2)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 14:20:24.062 [RMI TCP Connection(2)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 14:20:24.064 [RMI TCP Connection(2)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-31 14:20:52.660 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 14:20:52.660 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 14:20:52.662 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 14:20:52.662 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 14:21:40.368 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 14:21:40.394 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 17776 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 14:21:40.395 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 14:21:41.595 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 14:21:41.597 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 14:21:41.684 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 0 Redis repository interfaces.
+2024-05-31 14:21:42.546 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 14:21:42.554 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 14:21:42.555 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 14:21:42.555 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 14:21:42.618 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 14:21:42.618 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2198 ms
+2024-05-31 14:21:42.804 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 14:21:42.998 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 14:21:43.036 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 14:21:43.278 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 14:21:43.618 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@19565b5
+2024-05-31 14:21:43.619 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 14:21:43.620 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 14:21:43.620 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 14:21:51.347 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 14:21:51.434 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@60232aad, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@380f9c1d, org.springframework.security.web.context.SecurityContextHolderFilter@648100de, org.springframework.security.web.header.HeaderWriterFilter@531455c1, org.springframework.web.filter.CorsFilter@5bc44d78, org.springframework.security.web.authentication.logout.LogoutFilter@7ab5b01a, net.maku.framework.security.filter.AuthenticationTokenFilter@36bd07ec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@382e7f70, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6dbc3756, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2fa81b23, org.springframework.security.web.session.SessionManagementFilter@3df88502, org.springframework.security.web.access.ExceptionTranslationFilter@5ed52389, org.springframework.security.web.access.intercept.AuthorizationFilter@4c0e09b5]
+2024-05-31 14:21:51.634 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 14:21:52.348 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 14:21:52.355 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 14:21:52.367 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 12.269 seconds (process running for 12.92)
+2024-05-31 14:21:52.677 [RMI TCP Connection(2)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 14:21:52.678 [RMI TCP Connection(2)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 14:21:52.679 [RMI TCP Connection(2)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-31 14:45:14.861 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 14:45:14.861 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 14:45:14.862 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 14:45:14.862 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 14:45:27.898 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 14:45:27.925 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 14064 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 14:45:27.925 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 14:45:29.289 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 14:45:29.291 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 14:45:29.375 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 0 Redis repository interfaces.
+2024-05-31 14:45:30.228 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 14:45:30.236 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 14:45:30.237 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 14:45:30.237 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 14:45:30.297 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 14:45:30.298 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2348 ms
+2024-05-31 14:45:30.485 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 14:45:30.675 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 14:45:30.711 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 14:45:30.936 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 14:45:31.247 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@19565b5
+2024-05-31 14:45:31.248 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 14:45:31.249 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 14:45:31.249 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 14:45:38.634 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 14:45:38.714 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7c5ae5c3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36b5dbdf, org.springframework.security.web.context.SecurityContextHolderFilter@e182453, org.springframework.security.web.header.HeaderWriterFilter@120bb5b5, org.springframework.web.filter.CorsFilter@5bc44d78, org.springframework.security.web.authentication.logout.LogoutFilter@65977161, net.maku.framework.security.filter.AuthenticationTokenFilter@36bd07ec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34ceefb5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25a41143, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f35d13d, org.springframework.security.web.session.SessionManagementFilter@d471ddb, org.springframework.security.web.access.ExceptionTranslationFilter@17caf362, org.springframework.security.web.access.intercept.AuthorizationFilter@2693b289]
+2024-05-31 14:45:38.904 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 14:45:39.614 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 14:45:39.622 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 14:45:39.637 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 12.003 seconds (process running for 12.637)
+2024-05-31 14:45:39.733 [RMI TCP Connection(1)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 14:45:39.734 [RMI TCP Connection(1)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 14:45:39.735 [RMI TCP Connection(1)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-31 14:50:44.212 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 14:50:44.212 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 14:50:44.213 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 14:50:44.214 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 14:50:46.837 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 14:50:46.864 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 9948 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 14:50:46.864 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 14:50:49.756 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 14:50:49.782 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 17944 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 14:50:49.782 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 14:50:50.993 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 14:50:50.995 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 14:50:51.078 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74 ms. Found 0 Redis repository interfaces.
+2024-05-31 14:50:51.939 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 14:50:51.946 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 14:50:51.947 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 14:50:51.947 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 14:50:52.008 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 14:50:52.009 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2201 ms
+2024-05-31 14:50:52.194 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 14:50:52.384 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 14:50:52.423 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 14:50:52.645 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 14:50:52.986 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@40dcbf7
+2024-05-31 14:50:52.987 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 14:50:52.988 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 14:50:52.988 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 14:51:00.444 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 14:51:00.521 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@47e6004c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c5ae5c3, org.springframework.security.web.context.SecurityContextHolderFilter@5f0bcadb, org.springframework.security.web.header.HeaderWriterFilter@4fc41cba, org.springframework.web.filter.CorsFilter@580c4c0b, org.springframework.security.web.authentication.logout.LogoutFilter@75564689, net.maku.framework.security.filter.AuthenticationTokenFilter@69e8f7a5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b3b763d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50e0541, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36b5dbdf, org.springframework.security.web.session.SessionManagementFilter@358b70c4, org.springframework.security.web.access.ExceptionTranslationFilter@75044df3, org.springframework.security.web.access.intercept.AuthorizationFilter@8dcc25]
+2024-05-31 14:51:00.708 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 14:51:01.407 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 14:51:01.414 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 14:51:01.426 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 11.939 seconds (process running for 12.593)
+2024-05-31 14:51:01.543 [RMI TCP Connection(2)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 14:51:01.544 [RMI TCP Connection(2)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 14:51:01.546 [RMI TCP Connection(2)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-05-31 14:52:28.312 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 14:52:28.312 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 14:52:28.313 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 14:52:28.313 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 14:59:32.532 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 14:59:32.558 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 4884 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 14:59:32.559 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 14:59:33.757 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 14:59:33.759 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 14:59:33.847 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 0 Redis repository interfaces.
+2024-05-31 14:59:34.715 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 14:59:34.723 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 14:59:34.724 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 14:59:34.724 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 14:59:34.787 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 14:59:34.787 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2201 ms
+2024-05-31 14:59:34.961 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 14:59:35.154 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 14:59:35.191 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 14:59:35.407 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 14:59:35.742 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@2bef33e7
+2024-05-31 14:59:35.743 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 14:59:35.743 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 14:59:35.744 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 14:59:43.386 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 14:59:43.462 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4623c0d3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c7335dc, org.springframework.security.web.context.SecurityContextHolderFilter@28f33810, org.springframework.security.web.header.HeaderWriterFilter@2132629e, org.springframework.web.filter.CorsFilter@5d00e30e, org.springframework.security.web.authentication.logout.LogoutFilter@d471ddb, net.maku.framework.security.filter.AuthenticationTokenFilter@1c96bf1e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76527a00, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42908ad5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3095e9c6, org.springframework.security.web.session.SessionManagementFilter@60232aad, org.springframework.security.web.access.ExceptionTranslationFilter@25fa5c0c, org.springframework.security.web.access.intercept.AuthorizationFilter@1ea6446b]
+2024-05-31 14:59:43.648 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 14:59:44.345 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 14:59:44.352 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 14:59:44.364 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 12.096 seconds (process running for 12.741)
+2024-05-31 14:59:44.893 [RMI TCP Connection(2)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 14:59:44.893 [RMI TCP Connection(2)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 14:59:44.895 [RMI TCP Connection(2)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-05-31 15:09:57.783 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 15:09:57.784 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 15:09:57.785 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 15:09:57.786 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 15:10:01.609 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 15:10:01.635 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 26372 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 15:10:01.636 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 15:10:02.843 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 15:10:02.845 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 15:10:02.937 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 0 Redis repository interfaces.
+2024-05-31 15:10:03.792 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 15:10:03.799 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 15:10:03.800 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 15:10:03.801 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 15:10:03.861 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 15:10:03.861 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2200 ms
+2024-05-31 15:10:04.041 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 15:10:04.237 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 15:10:04.274 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 15:10:04.502 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 15:10:04.793 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@380cd266
+2024-05-31 15:10:04.795 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 15:10:04.795 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 15:10:04.795 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 15:10:12.566 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 15:10:12.646 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5f0bcadb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e182453, org.springframework.security.web.context.SecurityContextHolderFilter@5ec80bbd, org.springframework.security.web.header.HeaderWriterFilter@4e881e14, org.springframework.web.filter.CorsFilter@69a031a4, org.springframework.security.web.authentication.logout.LogoutFilter@79c48ad5, net.maku.framework.security.filter.AuthenticationTokenFilter@11b74ecb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49588c70, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54a81a18, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d7bfb13, org.springframework.security.web.session.SessionManagementFilter@38eb2140, org.springframework.security.web.access.ExceptionTranslationFilter@304f4888, org.springframework.security.web.access.intercept.AuthorizationFilter@d471ddb]
+2024-05-31 15:10:12.852 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 15:10:13.544 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 15:10:13.551 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 15:10:13.563 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 12.222 seconds (process running for 12.875)
+2024-05-31 15:10:14.058 [RMI TCP Connection(3)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 15:10:14.059 [RMI TCP Connection(3)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 15:10:14.061 [RMI TCP Connection(3)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-05-31 15:15:36.682 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 15:15:36.683 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 15:15:36.685 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 15:15:36.685 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 15:15:50.183 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 15:15:50.209 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 3556 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 15:15:50.210 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 15:15:51.418 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 15:15:51.420 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 15:15:51.506 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 0 Redis repository interfaces.
+2024-05-31 15:15:52.371 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 15:15:52.379 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 15:15:52.380 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 15:15:52.380 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 15:15:52.443 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 15:15:52.444 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2210 ms
+2024-05-31 15:15:52.624 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 15:15:52.817 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 15:15:52.858 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 15:15:53.081 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 15:15:53.383 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@40aaf656
+2024-05-31 15:15:53.384 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 15:15:53.385 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 15:15:53.385 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 15:16:00.972 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 15:16:01.050 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@17caf362, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c66be14, org.springframework.security.web.context.SecurityContextHolderFilter@35b97c69, org.springframework.security.web.header.HeaderWriterFilter@648100de, org.springframework.web.filter.CorsFilter@91c11b6, org.springframework.security.web.authentication.logout.LogoutFilter@64078e6a, net.maku.framework.security.filter.AuthenticationTokenFilter@193c810, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39a8905b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e13e2fc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e78213c, org.springframework.security.web.session.SessionManagementFilter@7daecd21, org.springframework.security.web.access.ExceptionTranslationFilter@47bcb545, org.springframework.security.web.access.intercept.AuthorizationFilter@290964bd]
+2024-05-31 15:16:01.244 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 15:16:01.945 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 15:16:01.952 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 15:16:01.964 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 12.047 seconds (process running for 12.687)
+2024-05-31 15:16:02.517 [RMI TCP Connection(2)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 15:16:02.517 [RMI TCP Connection(2)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 15:16:02.519 [RMI TCP Connection(2)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-05-31 15:18:16.963 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 15:18:16.964 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 15:18:16.966 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 15:18:16.966 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 15:18:33.651 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 15:18:33.677 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 27796 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 15:18:33.677 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 15:18:34.980 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 15:18:34.981 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 15:18:35.068 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 0 Redis repository interfaces.
+2024-05-31 15:18:35.917 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 15:18:35.925 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 15:18:35.926 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 15:18:35.926 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 15:18:35.991 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 15:18:35.991 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2288 ms
+2024-05-31 15:18:36.169 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 15:18:36.357 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 15:18:36.394 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 15:18:36.618 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 15:18:36.915 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@51806858
+2024-05-31 15:18:36.916 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 15:18:36.916 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 15:18:36.917 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 15:18:44.644 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 15:18:44.727 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@40597c95, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7daecd21, org.springframework.security.web.context.SecurityContextHolderFilter@3ab87cac, org.springframework.security.web.header.HeaderWriterFilter@d2eddc2, org.springframework.web.filter.CorsFilter@195888a6, org.springframework.security.web.authentication.logout.LogoutFilter@2b2f8cf, net.maku.framework.security.filter.AuthenticationTokenFilter@14764fdd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6382bc3f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7bcd497, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@51ba8929, org.springframework.security.web.session.SessionManagementFilter@627a1c77, org.springframework.security.web.access.ExceptionTranslationFilter@361d56a3, org.springframework.security.web.access.intercept.AuthorizationFilter@2f43c73a]
+2024-05-31 15:18:44.922 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 15:18:45.611 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 15:18:45.619 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 15:18:45.630 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 12.248 seconds (process running for 12.879)
+2024-05-31 15:18:45.974 [RMI TCP Connection(3)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 15:18:45.974 [RMI TCP Connection(3)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 15:18:45.975 [RMI TCP Connection(3)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-31 15:20:37.549 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 15:20:37.550 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 15:20:37.551 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 15:20:37.551 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 15:27:43.092 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 15:27:43.119 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 24472 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 15:27:43.120 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 15:27:44.303 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 15:27:44.305 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 15:27:44.396 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 0 Redis repository interfaces.
+2024-05-31 15:27:45.244 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 15:27:45.251 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 15:27:45.252 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 15:27:45.252 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 15:27:45.312 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 15:27:45.312 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2167 ms
+2024-05-31 15:27:45.492 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 15:27:45.684 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 15:27:45.722 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 15:27:45.949 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 15:27:46.311 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@51806858
+2024-05-31 15:27:46.313 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 15:27:46.313 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 15:27:46.313 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 15:27:53.846 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 15:28:01.995 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@8802edd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50fd4246, org.springframework.security.web.context.SecurityContextHolderFilter@4750e942, org.springframework.security.web.header.HeaderWriterFilter@65c75870, org.springframework.web.filter.CorsFilter@195888a6, org.springframework.security.web.authentication.logout.LogoutFilter@6a17ab87, net.maku.framework.security.filter.AuthenticationTokenFilter@14764fdd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@42908ad5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7335aae5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@35c55050, org.springframework.security.web.session.SessionManagementFilter@155788a7, org.springframework.security.web.access.ExceptionTranslationFilter@38eb2140, org.springframework.security.web.access.intercept.AuthorizationFilter@6a8a54f5]
+2024-05-31 15:28:02.188 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 15:28:02.898 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 15:28:02.905 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 15:28:02.916 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 20.097 seconds (process running for 20.736)
+2024-05-31 15:28:03.030 [RMI TCP Connection(1)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 15:28:03.031 [RMI TCP Connection(1)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 15:28:03.034 [RMI TCP Connection(1)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-05-31 15:48:52.975 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 15:48:52.976 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 15:48:52.977 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 15:48:52.977 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 15:48:57.119 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 15:48:57.146 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 23628 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 15:48:57.147 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 15:48:58.340 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 15:48:58.342 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 15:48:58.429 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 0 Redis repository interfaces.
+2024-05-31 15:48:59.278 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 15:48:59.285 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 15:48:59.286 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 15:48:59.286 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 15:48:59.351 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 15:48:59.351 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2179 ms
+2024-05-31 15:48:59.529 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 15:48:59.720 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 15:48:59.758 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 15:48:59.978 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 15:49:00.306 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@2bef33e7
+2024-05-31 15:49:00.308 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 15:49:00.308 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 15:49:00.308 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 15:49:08.136 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 15:49:08.214 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2ba7828b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e6945c6, org.springframework.security.web.context.SecurityContextHolderFilter@173039b5, org.springframework.security.web.header.HeaderWriterFilter@74fbee59, org.springframework.web.filter.CorsFilter@5d00e30e, org.springframework.security.web.authentication.logout.LogoutFilter@1990afa2, net.maku.framework.security.filter.AuthenticationTokenFilter@1c96bf1e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25e95d04, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64a9719a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16e6a643, org.springframework.security.web.session.SessionManagementFilter@5c863996, org.springframework.security.web.access.ExceptionTranslationFilter@28ba90c1, org.springframework.security.web.access.intercept.AuthorizationFilter@595626b8]
+2024-05-31 15:49:08.398 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 15:49:09.095 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 15:49:09.102 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 15:49:09.115 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 12.274 seconds (process running for 12.936)
+2024-05-31 15:49:09.411 [RMI TCP Connection(2)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 15:49:09.411 [RMI TCP Connection(2)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 15:49:09.414 [RMI TCP Connection(2)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-05-31 15:49:34.443 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 15:49:34.443 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 15:49:34.445 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 15:49:34.445 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 15:49:37.976 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 15:49:38.004 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 28484 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 15:49:38.004 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 15:49:39.189 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 15:49:39.191 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 15:49:39.273 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 0 Redis repository interfaces.
+2024-05-31 15:49:40.132 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 15:49:40.139 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 15:49:40.140 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 15:49:40.140 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 15:49:40.202 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 15:49:40.202 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2172 ms
+2024-05-31 15:49:40.386 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 15:49:40.574 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 15:49:40.612 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 15:49:40.836 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 15:49:41.140 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@40dcbf7
+2024-05-31 15:49:41.142 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 15:49:41.142 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 15:49:41.142 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 15:49:48.987 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 15:49:49.064 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@25c6f0fc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@531455c1, org.springframework.security.web.context.SecurityContextHolderFilter@1e686da2, org.springframework.security.web.header.HeaderWriterFilter@cf822a6, org.springframework.web.filter.CorsFilter@580c4c0b, org.springframework.security.web.authentication.logout.LogoutFilter@50aa5826, net.maku.framework.security.filter.AuthenticationTokenFilter@69e8f7a5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@66ee4640, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57ae3c0e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27dfd939, org.springframework.security.web.session.SessionManagementFilter@1f234e35, org.springframework.security.web.access.ExceptionTranslationFilter@70916715, org.springframework.security.web.access.intercept.AuthorizationFilter@1263664f]
+2024-05-31 15:49:49.256 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 15:49:49.961 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 15:49:49.969 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 15:49:49.980 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 12.272 seconds (process running for 12.943)
+2024-05-31 15:49:50.340 [RMI TCP Connection(3)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 15:49:50.341 [RMI TCP Connection(3)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 15:49:50.343 [RMI TCP Connection(3)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-05-31 16:37:08.743 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 16:37:08.744 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 16:37:08.745 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 16:37:08.745 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 16:37:11.515 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 16:37:11.542 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 17676 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 16:37:11.543 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 16:37:12.813 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 16:37:12.815 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 16:37:12.908 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 0 Redis repository interfaces.
+2024-05-31 16:37:13.785 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 16:37:13.792 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 16:37:13.793 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 16:37:13.793 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 16:37:13.857 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 16:37:13.857 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2289 ms
+2024-05-31 16:37:14.036 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 16:37:14.233 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 16:37:14.273 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 16:37:14.501 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 16:37:14.861 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@25dacc5a
+2024-05-31 16:37:14.862 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 16:37:14.863 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 16:37:14.863 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 16:37:22.195 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 16:37:22.268 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5479abd8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2004f99, org.springframework.security.web.context.SecurityContextHolderFilter@29e40db1, org.springframework.security.web.header.HeaderWriterFilter@5f7e2ca8, org.springframework.web.filter.CorsFilter@37ad818e, org.springframework.security.web.authentication.logout.LogoutFilter@ef09e1, net.maku.framework.security.filter.AuthenticationTokenFilter@52b77d5e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f35d13d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b0a864e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d200d3e, org.springframework.security.web.session.SessionManagementFilter@6c758c74, org.springframework.security.web.access.ExceptionTranslationFilter@223ed38f, org.springframework.security.web.access.intercept.AuthorizationFilter@5e774546]
+2024-05-31 16:37:22.460 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 16:37:23.163 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 16:37:23.170 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 16:37:23.181 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 11.935 seconds (process running for 12.567)
+2024-05-31 16:37:23.356 [RMI TCP Connection(5)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 16:37:23.356 [RMI TCP Connection(5)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 16:37:23.359 [RMI TCP Connection(5)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-05-31 16:48:33.742 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 16:48:33.743 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 16:48:33.744 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 16:48:33.744 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 16:50:38.223 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 16:50:38.250 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 21320 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 16:50:38.251 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 16:50:39.465 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 16:50:39.467 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 16:50:39.561 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 83 ms. Found 0 Redis repository interfaces.
+2024-05-31 16:50:40.419 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 16:50:40.427 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 16:50:40.428 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 16:50:40.428 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 16:50:40.492 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 16:50:40.492 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2214 ms
+2024-05-31 16:50:40.671 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 16:50:40.866 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 16:50:40.904 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 16:50:41.132 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 16:50:42.325 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-05-31 16:50:42.344 [main] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-31 16:51:12.838 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 16:51:12.864 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 13296 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 16:51:12.865 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 16:51:14.048 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 16:51:14.050 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 16:51:14.133 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 0 Redis repository interfaces.
+2024-05-31 16:51:14.986 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 16:51:14.993 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 16:51:14.994 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 16:51:14.994 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 16:51:15.055 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 16:51:15.055 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2164 ms
+2024-05-31 16:51:15.236 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 16:51:15.422 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 16:51:15.459 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 16:51:15.681 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 16:51:15.865 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@40dcbf7
+2024-05-31 16:51:15.867 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 16:51:15.867 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 16:51:15.867 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 16:51:23.757 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 16:51:23.832 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@13967a64, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30d4d6fb, org.springframework.security.web.context.SecurityContextHolderFilter@5e9c6d8a, org.springframework.security.web.header.HeaderWriterFilter@5608233b, org.springframework.web.filter.CorsFilter@580c4c0b, org.springframework.security.web.authentication.logout.LogoutFilter@7e753fd6, net.maku.framework.security.filter.AuthenticationTokenFilter@69e8f7a5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f15639c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@466d87a1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3fb8e8cf, org.springframework.security.web.session.SessionManagementFilter@7ce09850, org.springframework.security.web.access.ExceptionTranslationFilter@fca4392, org.springframework.security.web.access.intercept.AuthorizationFilter@e620893]
+2024-05-31 16:51:24.029 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 16:51:24.721 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 16:51:24.729 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 16:51:24.740 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 12.172 seconds (process running for 12.802)
+2024-05-31 16:51:25.161 [RMI TCP Connection(3)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 16:51:25.162 [RMI TCP Connection(3)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 16:51:25.163 [RMI TCP Connection(3)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-31 16:52:55.003 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 16:52:55.003 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 16:52:55.005 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 16:52:55.005 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-05-31 16:56:52.751 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-31 16:56:52.778 [main] INFO  net.maku.ServerApplication - Starting ServerApplication using Java 17.0.10 with PID 3144 (D:\JavaPro\eps-background\ske-server\target\classes started by zheng in D:\JavaPro\eps-background)
+2024-05-31 16:56:52.779 [main] INFO  net.maku.ServerApplication - The following 1 profile is active: "dev"
+2024-05-31 16:56:53.982 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-31 16:56:53.984 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-31 16:56:54.071 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 0 Redis repository interfaces.
+2024-05-31 16:56:54.935 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-31 16:56:54.942 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-31 16:56:54.943 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-31 16:56:54.943 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-31 16:56:55.008 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-31 16:56:55.008 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2204 ms
+2024-05-31 16:56:55.186 [main] INFO  org.redisson.Version - Redisson 3.21.3
+2024-05-31 16:56:55.380 [redisson-netty-2-5] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 16:56:55.418 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-31 16:56:55.639 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-05-31 16:56:55.973 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection org.postgresql.jdbc.PgConnection@53850535
+2024-05-31 16:56:55.974 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-05-31 16:56:55.975 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-05-31 16:56:55.975 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-05-31 16:57:03.531 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-05-31 16:57:03.608 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5a32ab89, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8dcc25, org.springframework.security.web.context.SecurityContextHolderFilter@358b70c4, org.springframework.security.web.header.HeaderWriterFilter@2c66be14, org.springframework.web.filter.CorsFilter@604e8a6, org.springframework.security.web.authentication.logout.LogoutFilter@223ed38f, net.maku.framework.security.filter.AuthenticationTokenFilter@1013aa94, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a17ab87, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d7bfb13, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2693b289, org.springframework.security.web.session.SessionManagementFilter@134b9d9c, org.springframework.security.web.access.ExceptionTranslationFilter@7335aae5, org.springframework.security.web.access.intercept.AuthorizationFilter@72288b38]
+2024-05-31 16:57:03.799 [main] INFO  com.fhs.common.spring.SpringContextUtil - ------SpringContextUtil setApplicationContext-------
+2024-05-31 16:57:04.504 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-31 16:57:04.513 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-31 16:57:04.526 [main] INFO  net.maku.ServerApplication - Started ServerApplication in 12.042 seconds (process running for 12.686)
+2024-05-31 16:57:05.063 [RMI TCP Connection(2)-192.168.1.27] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-31 16:57:05.063 [RMI TCP Connection(2)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-31 16:57:05.065 [RMI TCP Connection(2)-192.168.1.27] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-05-31 17:19:11.461 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-05-31 17:19:11.461 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-05-31 17:19:11.463 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-05-31 17:19:11.463 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
